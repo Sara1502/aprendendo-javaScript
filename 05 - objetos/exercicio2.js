@@ -16,11 +16,12 @@ class pessoa {
         this.altura = altura;
         this.peso = peso;
     };
+
+    calcularImc() {
+        return this.peso / (this.altura * this.altura);
+    }
 };
 
-function calcularImc(peso, altura) {
-    return peso / Math.pow(altura, 2);
-}
 
 function classificarImc(imc) {
     if (imc < 18.5) {
@@ -36,8 +37,9 @@ function classificarImc(imc) {
     }
 }
 
+
 const sara = new pessoa('sara', 1.60, 55)
 
-const imc = calcularImc(sara.peso, sara.altura)
 
+const imc = sara.calcularImc()
 console.log(classificarImc(imc))
