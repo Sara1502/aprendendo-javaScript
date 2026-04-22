@@ -57,7 +57,7 @@ Exemplo:
 
     Saída:
         Maior número: 200
-        Menor número: 90 */
+        Menor número: 90 
 
 function gets() {
     numeros = [4, 100, 150, 90, 200];
@@ -71,4 +71,34 @@ function print(texto) {
 }
 
 
+module.exports = { gets, print } */
+
+
+/* 
+4) Faça um programa que receba a quantidade de números e seus respectivos valores.
+Imprima todos os números pares.
+Exemplo:
+    Entrada: 5, 1, 3, 9, 10, 12
+    Saída: Números Pares: 10, 12 */
+
+
+const numeros = [5, 1, 3, 9, 10, 12]
+
+let numerosPares = []
+
+function gets() {
+    for (i = 0; i < numeros.length; i++) {
+        let numero = numeros[i];
+        if (numero % 2 === 0) {
+            numerosPares.push(numero)
+        }
+    }
+    return ('Numeros pares: ' + numerosPares);
+}
+
+function print(texto) {
+    console.log(texto)
+}
+
 module.exports = { gets, print }
+
