@@ -28,7 +28,7 @@ module.exports = { gets, print } */
             2x7 = 14
             2x8 = 16
             2x9 = 18
-            2x10 = 20 */
+            2x10 = 20 
 
 function gets() {
     const numero = 2
@@ -38,6 +38,32 @@ function gets() {
         tabuada.push(resultado)
     }
     return tabuada
+}
+
+function print(texto) {
+    console.log(texto);
+}
+
+
+module.exports = { gets, print } */
+
+
+/* 3) Faça um programa que receba a quantidade de números e seus respectivos valores. 
+Imprima o maior e o menor número deste conjunto.
+
+Exemplo:
+    Entrada:
+        4, 100, 150, 90, 200
+
+    Saída:
+        Maior número: 200
+        Menor número: 90 */
+
+function gets() {
+    numeros = [4, 100, 150, 90, 200];
+    maiorNumero = Math.max(...numeros);
+    menorNumero = Math.min(...numeros)
+    return ('Maior numero: ' + maiorNumero + ' Menor numero: ' + menorNumero)
 }
 
 function print(texto) {
