@@ -25,7 +25,7 @@ function gets() {
     if (salarioBruto <= 1100) {
         salario = (salarioBruto - (salarioBruto * 0.05)) + bonus
         return salario
-    } if (salarioBruto >= 1100.01 && salarioBruto < 2500) {
+    }else if (salarioBruto >= 1100.01 && salarioBruto < 2500) {
         salario = (salarioBruto - (salarioBruto * 0.10)) + bonus
         return salario
     } else {
